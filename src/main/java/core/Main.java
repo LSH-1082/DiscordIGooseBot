@@ -1,16 +1,13 @@
 package core;
 
 
-//import listener.messageListener;
-
-import listener.commandListener;
+import command.cmdChatCleaner;
 import listener.messageListener;
+import util.SECRET;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
-import util.SECRET;
-import command.*;
 
 import javax.security.auth.login.*;
 
