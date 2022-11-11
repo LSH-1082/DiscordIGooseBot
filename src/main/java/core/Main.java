@@ -1,6 +1,5 @@
 package core;
 
-
 import command.cmdChatCleaner;
 import listener.messageListener;
 import util.SECRET;
