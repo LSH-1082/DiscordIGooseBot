@@ -2,6 +2,7 @@ package core;
 
 import command.cmdChatCleaner;
 import command.slashCommand;
+import listener.commandListener;
 import listener.messageListener;
 import util.SECRET;
 import net.dv8tion.jda.api.JDABuilder;
@@ -39,6 +40,7 @@ public class Main {
     public void addListener(){
         //builder.addEventListeners(new voiceListener());
         builder.addEventListeners(new slashCommand());
+        builder.addEventListeners(new commandListener());
         builder.addEventListeners(new messageListener());
     }
 }
