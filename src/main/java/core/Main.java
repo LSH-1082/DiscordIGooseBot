@@ -1,9 +1,6 @@
 package core;
 
-import command.cmdChatCleaner;
-import command.slashCommand;
-import listener.commandListener;
-import listener.messageListener;
+import command.Command;
 import util.SECRET;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
@@ -21,7 +18,6 @@ public class Main {
         builder.enableIntents(GatewayIntent.GUILD_VOICE_STATES);
         builder.enableCache(CacheFlag.VOICE_STATE);
         addListener();
-        addCommands();
         builder.build();
     }
 
@@ -33,14 +29,8 @@ public class Main {
         }
     }
 
-    public static void addCommands(){
-        commandHandler.command.put("Ã»¼Ò", new cmdChatCleaner());
-    }
 
     public void addListener(){
-        //builder.addEventListeners(new voiceListener());
-        builder.addEventListeners(new slashCommand());
-        builder.addEventListeners(new commandListener());
-        builder.addEventListeners(new messageListener());
+        builder.addEventListeners(new Command());
     }
 }
