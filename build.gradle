@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.27'
     implementation group: 'net.dv8tion', name: 'JDA', version: '5.0.0-alpha.22'
     implementation 'org.slf4j:slf4j-simple:2.0.3'
 }
