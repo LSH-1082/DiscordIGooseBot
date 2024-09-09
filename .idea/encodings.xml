@@ -7,7 +7,9 @@
     <file url="file://$PROJECT_DIR$/src/main/java/command/cmdChatCleaner.java" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/src/main/java/core/Main.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/core/permsCore.java" charset="x-windows-949" />
+    <file url="file://$PROJECT_DIR$/src/main/java/service/AttendanceService.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/util/ChangeTimeFormat.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/util/SECRET.java" charset="UTF-8" />
     <file url="PROJECT" charset="x-windows-949" />
   </component>
 </project>

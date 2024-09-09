@@ -25,7 +25,7 @@ public class AttendanceDAO {
                 while(resultSet.next()){
                     stat = resultSet.getString("status");
                 }
-                return stat;
+                return stat != null ? stat : "false";
             }
             catch (SQLException e) {
                 return "false";
@@ -37,6 +37,7 @@ public class AttendanceDAO {
             }
         }
         catch (SQLException e){
+            System.out.println("SQLException: " + e.getMessage());
             return "database connection failed";
         }
     }
