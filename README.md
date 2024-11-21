@@ -35,17 +35,17 @@
 
 
 **백엔드**
-- ![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=java&logoColor=white)
-- ![JDBC](https://img.shields.io/badge/JDBC-007396?style=flat-square&logo=java&logoColor=white)
+- ![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=java&logoColor=white)
+- ![JDBC](https://img.shields.io/badge/JDBC-007396?style=flat&logo=java&logoColor=white)
 
 **데이터베이스**
-- ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+- ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 
 **사용 도구**
-- ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+- ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
 **외부 API**
-- ![JDA (Java Discord API)](https://img.shields.io/badge/JDA%20(Java%20Discord%20API)-7289DA?style=flat-square&logo=discord&logoColor=white)
+- ![JDA (Java Discord API)](https://img.shields.io/badge/JDA%20(Java%20Discord%20API)-7289DA?style=flat&logo=discord&logoColor=white)
 
 ## 🤝 기여 방법
 
