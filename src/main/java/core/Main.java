@@ -1,6 +1,5 @@
 package core;
 
-import DAO.UserDAO;
 import command.Command;
 import util.SECRET;
 import net.dv8tion.jda.api.JDABuilder;
