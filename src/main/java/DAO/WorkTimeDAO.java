@@ -17,7 +17,7 @@ public class WorkTimeDAO {
         try {
             connection = DriverManager.getConnection(SECRET.DB_URL, SECRET.DB_USER, SECRET.DB_PASSWORD);
                 try {
-                    String sql = "INSERT INTO work_time(employee_user_id, attendance_time, leave_time) VALUES(?, ?, ?)";
+                    String sql = "INSERT INTO work_time(user_id, attendance_time, leave_time) VALUES(?, ?, ?)";
                     preparedStatement = connection.prepareStatement(sql);
                     preparedStatement.setString(1, userId);
                     preparedStatement.setTimestamp(2, Timestamp.valueOf(LocalDateTime.now()));
@@ -43,7 +43,7 @@ public class WorkTimeDAO {
         try {
             connection = DriverManager.getConnection(SECRET.DB_URL, SECRET.DB_USER, SECRET.DB_PASSWORD);
             try {
-                String sql = "UPDATE work_time SET leave_time = ? WHERE employee_user_id=? AND leave_time IS NULL";
+                String sql = "UPDATE work_time SET leave_time = ? WHERE user_id=? AND leave_time IS NULL";
                 preparedStatement = connection.prepareStatement(sql);
                 preparedStatement.setTimestamp(1, Timestamp.valueOf(LocalDateTime.now()));
                 preparedStatement.setString(2, userId);
@@ -68,7 +68,7 @@ public class WorkTimeDAO {
         try {
             connection = DriverManager.getConnection(SECRET.DB_URL, SECRET.DB_USER, SECRET.DB_PASSWORD);
             try {
-                String sql = "SELECT * FROM work_time WHERE employee_user_id=? ORDER BY attendance_time DESC LIMIT 1";
+                String sql = "SELECT * FROM work_time WHERE user_id=? ORDER BY attendance_time DESC LIMIT 1";
                 preparedStatement = connection.prepareStatement(sql);
                 preparedStatement.setString(1, userId);
 

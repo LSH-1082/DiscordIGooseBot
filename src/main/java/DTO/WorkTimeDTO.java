@@ -3,12 +3,12 @@ package DTO;
 import java.sql.Timestamp;
 
 public class WorkTimeDTO {
-    private String employeeUserId;
+    private String userId;
     private Timestamp attendanceTime;
     private Timestamp leaveTime;
 
-    public String getEmployeeUserId() {
-        return this.employeeUserId;
+    public String getUserId() {
+        return this.userId;
     }
 
     public Timestamp getAttendanceTime() {
@@ -19,8 +19,8 @@ public class WorkTimeDTO {
         return this.leaveTime;
     }
 
-    public void setEmployeeUserId(String employeeUserId) {
-        this.employeeUserId = employeeUserId;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public void setAttendanceTime(Timestamp attendanceTime) {
